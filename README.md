@@ -1,1 +1,0 @@
-# Responsive-Mobile-Platform-Assignment
