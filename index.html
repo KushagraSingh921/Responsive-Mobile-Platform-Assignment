@@ -3,242 +3,20 @@
     <head>
         <meta charset ="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title>The Mountain Bistro</title>
-        <link rel="stylesheet" type ="text/css" href="./index-restaurant.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Vilton</title>
+        <link rel="stylesheet" type ="text/css" href="index2.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-        <style>*{
-   padding:0;
-   margin: 0;
-   box-sizing:border-box ;
-   font-family: 'Poppins', sans-serif; 
-   scroll-behavior: smooth;
-   list-style:none ;
-   text-decoration: none;
-}
-:root {
-    --main-color:#b3f623;
-    --text-color:rgb(213, 224, 252);
-    --bg-color:#0c0b14;
-    --big-font: 2rem;
-    --h2-font:2.25rem;
-    --p-font:0.9rem;
-}
-*::selection{
-    background: var(--main-color);
-    color:#fff;
-}
-body{
-    color: var(--text-color);
-    background: var(--bg-color);
-}
-header{
-    position:fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index:1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 170px;
-    background: var(--bg-color);
-}
-.logo{
-    color: var(--main-color);
-    font-weight:600 ;
-    font-size: 2.4rem;
-}
-.navbar{
-    display:flex;
-}
-.navbar a{
-    color: var(--text-color);
-    font-size:1.1rem ;
-    padding: 10px 20px;
-    font-weight: 500;
-}
-.navbar a:hover{
-    color: var(--main-color);
-    transition: .4s;
-}
-#menu-icon{
-    font-size:2rem;
-    cursor: pointer;
-    display: none;
-}
-section{
-    padding: 70px 10%;
-}
-.home{
-    width:100%;
-    min-height: 100vh;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:2.5rem;
-    align-items: center;
-}
-.home-vid{
-    max-width: 100%;
-    width: 550px;
-    height: auto; 
-}
-.home-text h1{
-    height:fit-content;
-    font-size: var(--big-font);
-    color: var(--main-color);
-}
-.home-text h2{
-    font-size: var(--h2-font);
-    margin: 1rem 0 2rem;
-}
-.btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background:var(--main-color);
-    color: rgb(12, 6, 6);
-    border-radius: 0.5rem;
-}
-.btn:hover{
-    transform: scale(1.2) translateY(8px);
-    transition: .4s;
-}
-.about{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-gap: 1.5rem;
-    align-items: center;
-}
-.about-img img{
-    max-width: 100%;
-    width: 480px;
-    height: auto;
-}
-.about-text span{
-    color: var(--main-color);
-    font-weight: 600;
-    font-size: var(--big-font);
-}
-.about-text h2{
-    font-size: var(--h2-font);
-}
-.about-text p{
-    margin: 0.8rem 0 1.8rem;
-    line-height:1.7 ;
-}
-.heading{
-    font-size: var(--h2-font);
-    text-align: center;
-}
-.heading-span{
-    font-size: var(--h2-font);
-    color: var(--main-color);
-    font-weight: 600;
-}
-.heading h2{
-    font-size: var(--big-font);
-    color:var(--text-color);
-}
-.menu-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
-    grid-gap: 1.5rem;
-    align-items: center;
-}
-.box{
-    position:relative;
-    margin-top: 2rem;
-    height:auto;
-    display:grid;
-    grid-column: auto;
-    flex-direction:column;
-    align-items: center;
-    justify-content:left;
-    background:#feeee7;
-    padding: 20px;
-    border-radius: 0.5rem;
-}
-.box-img{
-    object-fit: fill;
-    width: 350px;
-    height: 200px;
-}
-.box-img img{
-    
-    width:65%;
-    height:75%;
-}
-
-.box h2{
-    color:var(--bg-color);
-    font-size:1rem;
-    font-weight:400;
-    margin: 1px 0 10px;
-    text-align: left;
-}
-.box span{
-   font-size: var(--p-font);
-   color: var(--bg-color);
-   font-weight:600px; 
-}
-.box .bx{
-    background:rgb(13, 13, 32);
-    position:absolute;
-    right: 0;
-    top: 0;
-    font-size: 20px;
-    padding: 7px 10px;
-    border-radius: 0 0.5rem 0 0.5rem;
-}
-.s-box{
-   text-align: center;
-   padding:20px 30px;
-}
-.s-box img{
-    position: relative;
-    width: 720px;
-}
-.s-box margin{
-    margin: 4px 0 10px;
-    color: var(--main-color);
-    font-size:  1.2rem;
-}
-.s-box p{
-    font-size: var(--big-font);
-    line-height: 1.7;
-}
-.s-box h3{
-    font-size: var(--h2-font);
-}
-.contact{
-    background: #feeee7;
-    padding: 70px 0;
-    text-align: center;
-    width: 66%;
-    margin:100px auto;
-    border-radius: 10px;
-}
-.contact h2{
-    font-size: 2rem;
-    color: #b3f623;
-    margin-bottom: 30px;
-
-}
-
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <a href="#" class="logo">The Mountain Bistro</a>
+            <a href="#" class="logo">Vilton</a>
             <div class="bx bx-menu" id="menu-icon"></div>
-
             <u1 class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#performance">Performance</a></li>
                 <li><a href="#contact">Contact</a></li>
             </u1>
         </header>
@@ -246,95 +24,49 @@ section{
         <section class="home" id="home">
             <div class="home-text">
                 <h1>Assignment</h1>
-                <h2>Food,<br> The Most Precious Thing.</h2>
-                <a href="#" class="btn"> Today's Menu</a>
+                <h2>Self Driving Cars,<br> The Future Is Near!</h2>
+                <a href="#" class="btn"> Learn More</a>
             </div>
             <div class="home-vid">
-                <video width="670" controls>
-                <source src="Pizza - 123629.mp4" type="video/mp4">
+                <video width="800" controls>
+                <source src="car-driving.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
 
             <section class="about" id="about">
                 <div class="about-img">
-                    <img src="2.jpg">
+                    <img src="bg.png">
                 </div>
                 <div class="about-text">
                     <span>About Us</span>
-                    <h2>We are the best restaurant you can find in your budget</h2>
-                    <p>Come to our bistro and indulge in the vast spectrum of flavours.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h2>We are an automobile company which focuses on making self driving cars. We have taken a leap into the future and you should too.<br> 
+                    Our company's main target is to educate people more about autonomous cars and to bring these intelligent machines to India.</h2>
+                    <p>Come to our showroom and learn more about our intelligent machines. We are happy to give you our time.</p>
                 </div>   
             </section>
-            <section class="menu" id="menu">
+            <section class="performance" id="performance">
                 <div class="heading">
-                    <span>Food Menu</span>
-                    <h2>Great Taste and Great Price!</h2>
-                </div>
-
-                <div class="menu-container">
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="3.jpg">
-                        </div> 
-                            <h2>Burger</h2>
-                            <span>Rs 150</span>
-                            <i class='bx bxs-cart-alt'></i>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="pizza.jpg">
-                        </div> 
-                            <h2>Pizza</h2>
-                            <span>Rs 350</span>
-                            <i class='bx bxs-cart-alt'></i>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="4.jpg">
-                        </div>     
-                            <h2>Pasta</h2>
-                            <span>Rs 250</span>
-                            <i class='bx bxs-cart-alt'></i>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="5.jpg">
-                        </div> 
-                            <h2>Fries</h2>
-                            <span>Rs 120</span>
-                            <i class='bx bxs-cart-alt'></i>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                                <img src="6.jpg">
-                            </div> 
-                            <h2>Taco</h2>
-                            <span>Rs 225</span>
-                            <i class='bx bxs-cart-alt'></i>
-                    </div>
-                </div>
-            </section>
-
-            <section class="services" id="services">
-                <div class="heading">
-                    <span>Services</span>
-                    <h2>We provide the best quality food and hope that you will enjoy it.</h2>
+                    <body>
+                    <img src="car-bg.jpg">
+                    <span><br>Performance</span>
+                    <h2>: Range: 256km On Full Charge<br>
+                    : Weight: 2000kg<br>
+                    : Length : 5.1 m <br>
+                    : Seating: 5 adults<br>
+                    : Wheel Size: 20"</h2>
+                </body>
                 </div>
                     <div class="s-box">
-                        <img src="service.jpg">
+                        <img src="">
                         <h3>Order</h3> 
-                        <p>You can order food online and we promise to deliver your tasty food within 30 minutes.</p>
+                        <p>You can get our quote online and reach us back whenever you are ready to buy our car.</p>
+                        <a href="#" class="btn">Get Quote</a>
                     </div>
             </section>
 
             <section class="contact" id="contact">
-                <h2> We make quality food<br> Everyday</h2>
+                <h2> We are always happy to listen to your queries</h2>
                 <a href="#" class="btn">Contact us</a> 
             </section>
     </body>
